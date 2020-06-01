@@ -1,0 +1,115 @@
+body {
+    width: 90vw;
+    height: 100vh;
+    padding: 3px 50px;
+    background-color: rgb(162, 206, 250);
+    background-image: radial-gradient(currentColor 1px, transparent 1px), radial-gradient(currentColor 1px, transparent 1px);
+    background-size: calc(20 * 1px) calc(20 * 1px);
+    background-position: 0 0, calc(10 * 1px) calc(10 * 1px);
+}
+
+.header {
+    width: 100%;
+    margin: 0px;
+    font-size: 2em;
+    background-color: rgb(67, 69, 90);
+    color: whitesmoke;
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    margin: 0px;
+    font-size: 1.1em;
+    background-color: rgba(8, 122, 160, 0.815);
+    color: rgb(102, 6, 121);
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0px;
+}
+
+img {
+    width: 200px;
+}
+
+.left-panel {
+    display: flex;
+    background-color: chocolate;
+    flex-flow: column;
+    justify-content: center;
+    width: 20%;
+    min-height: 700px;
+    float: left;
+}
+
+.right-panel {
+    display: flex;
+    background-color: grey;
+    flex-flow: row wrap;
+    justify-content: center;
+    justify-items: center;
+    width: 80%;
+    min-height: 700px;
+}
+
+.right-panel > div {
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+    color: cornsilk;
+    justify-content: center;
+    text-align: center;
+    line-height: 240px;
+    font-size: 3em;
+    float: none;
+}
+
+.menu {
+    list-style: none;
+    width: 100%;
+}
+
+ul {
+    padding: 0px;
+}
+
+.menu li {
+    background-color: darkviolet;
+    color: gainsboro;
+    padding: 5px;
+    width: 200px;
+    font-size: 2em;
+}
+
+.menu li a:hover {
+    background-color:  rgb(142, 89, 165);
+    text-decoration: none;
+}
+
+@media screen and (max-width:1100px) {
+    img, .menu li {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    img, .menu li {
+        width: 100px; 
+    }
+}
+
+@media screen and (max-width:500px) {
+    img, .menu li {
+        width: 200px; 
+    }
+    .left-panel {
+        float: none;
+        width: 100%;
+    }
+    .header {
+        font-size: 1.2em;
+    }
+}
