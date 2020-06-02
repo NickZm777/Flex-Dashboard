@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     width: 90vw;
     height: 100vh;
@@ -39,7 +42,7 @@ img {
     background-color: chocolate;
     flex-flow: column;
     justify-content: center;
-    width: 20%;
+    flex: 20%;
     min-height: 700px;
     float: left;
 }
@@ -50,7 +53,7 @@ img {
     flex-flow: row wrap;
     justify-content: center;
     justify-items: center;
-    width: 80%;
+    flex: 80%;
     min-height: 700px;
 }
 
